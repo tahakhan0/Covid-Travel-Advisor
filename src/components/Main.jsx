@@ -7,6 +7,7 @@ import { getDataForAllCountries } from "../data/fetchCountries";
 import Navbar from "./Navbar";
 import useSWR from "swr";
 import Alert from "./Alert";
+import ReactGa from "react-ga";
 
 export default function Main() {
   const [messages, setMessages] = useState([]);
@@ -38,6 +39,8 @@ export default function Main() {
 
   useEffect(() => {
     setMounted(true);
+    ReactGa.initialize("G-PCGPX0FWZ9");
+    ReactGa.pageview("/");
   }, [footerEndRef]);
 
   return (
