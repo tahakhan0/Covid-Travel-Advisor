@@ -4,7 +4,7 @@ export default function CookieAlert() {
   return (
     <div className="fixed-bottom">
       <div className="row d-flex justify-content-center mb-0">
-        <div className="col-4">
+        <div className="col-10 col-sm-6">
           <div
             className="alert alert-dismissible fade show"
             role="alert"
