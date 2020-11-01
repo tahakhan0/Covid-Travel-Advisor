@@ -147,7 +147,7 @@ export default function MiniTile(props) {
           <div className="col-12">
             <hr />
             <div className="row">
-              <div className="col-8">
+              <div className="col-12 col-sm-8">
                 <small className="text-secondary">
                   {api ? (
                     <ul className="list-inline">
@@ -163,7 +163,7 @@ export default function MiniTile(props) {
                   ) : null}
                 </small>
               </div>
-              <div className="col d-flex justify-content-end">
+              <div className="col-12 d-flex justify-content-end">
                 <button
                   className="btn btn-outline-primary btn-sm"
                   onClick={() => seeMoreDetails()}
@@ -175,53 +175,6 @@ export default function MiniTile(props) {
               </div>
             </div>
           </div>
-
-          {/* {details && (
-        <div className="row">
-          <ul>
-            <li>
-              <strong>Quarantine:</strong> {quarantine_status}
-            </li>
-            {messages === "No messages" ? null : (
-              <li>
-                <strong>Travel Restrictions: </strong>
-                {messagesArray.length > 1 ? (
-                  <ul>
-                    {messagesArray.map((mArray) => (
-                      <li className="textLI" key={mArray}>
-                        {mArray}
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  messages
-                )}
-              </li>
-            )}
-            {messages === "No messages" && restricted_countries.length !== 0 ? (
-              <li>
-                <strong>Restricted Countries:</strong>
-              </li>
-            ) : null}
-            <ul className="list-inline mt-1 mb-2">
-              {restricted_countries.map((c) => (
-                <li className="list-inline-item" key={c}>
-                  <span style={{ fontSize: "14px" }}>{c}</span>
-                </li>
-              ))}
-            </ul>
-          </ul>
-        </div>
-      )} */}
-
-          {/* <div className="col-12 d-flex justify-content-end">
-          <button
-            className="btn btn-outline-primary btn-sm"
-            onClick={() => seeMoreDetails()}
-          >
-            {!details ? "See more details" : "Minimize"}
-          </button>
-        </div> */}
         </div>
       </div>
     </div>
