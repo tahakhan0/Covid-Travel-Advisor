@@ -4,11 +4,11 @@ export default function Navbar({ scrollToFooter }) {
   return (
     <nav
       className="navbar navbar-expand-md navbar-dark"
-      style={{ backgroundColor: "#563D7C" }}
+      style={{ backgroundColor: "black" }}
     >
       <div className="d-md-flex mx-auto">
         <a className="navbar-brand" href="#">
-          Covid Assistant
+          Covid Travel Assistant
         </a>
         <button
           className="navbar-toggler navbar-toggler-right"
