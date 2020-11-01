@@ -41,7 +41,7 @@ export default function Main() {
   }, [footerEndRef]);
 
   return (
-    <div className="d-flex flex-column">
+    <div className="container-fluid">
       <Navbar scrollToFooter={handleScroll} />
       {/* <Search handleInputChange={handleInput} /> */}
       <Alert />
