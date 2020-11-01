@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import useSWR from "swr";
 import Alert from "./Alert";
 import ReactGA from "react-ga";
+import CookieAlert from "./CookieAlert";
 
 export default function Main() {
   const [messages, setMessages] = useState([]);
@@ -82,6 +83,7 @@ export default function Main() {
       {/* {fromCountry && toCountry && (
         <GroupTiles fromCountry={fromCountry} toCountry={toCountry} />
       )} */}
+      <CookieAlert />
       <Footer footerRef={footerEndRef} />
     </div>
   );

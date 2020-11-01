@@ -4,7 +4,7 @@ export default function Navbar({ scrollToFooter }) {
   return (
     <nav
       className="navbar navbar-expand-md navbar-dark"
-      style={{ backgroundColor: "black" }}
+      style={{ backgroundColor: "#003542" }}
     >
       <a className="navbar-brand" href="#">
         Covid Travel Assistant
@@ -22,7 +22,7 @@ export default function Navbar({ scrollToFooter }) {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav mr-sm-2 ml-auto">
           <li className="nav-item active">
             <a className="nav-link" onClick={scrollToFooter}>
               About this project<span className="sr-only">(current)</span>
