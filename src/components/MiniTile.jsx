@@ -34,15 +34,15 @@ export default function MiniTile(props) {
     <div className="card miniTileCardStyle shadow-sm bg-white rounded">
       <div className="card-body">
         <div className="row">
-          <div className="col-12 col-sm-5 d-flex justify-content-center">
+          <div className="col-12 col-sm-12 col-md-5 d-flex justify-content-center">
             <div className="card-title tileTitleStyle">
               {images[country.country_code]}
               <span className="ml-2">{country.name}</span>
             </div>
           </div>
-          <div className="col-12 col-sm-7">
+          <div className="col-12 col-md-7">
             <div className="row d-block d-sm-flex justify-content-end">
-              <div className="col-8 col-xs-6 col-sm-8 col-md-6 col-xl-4">
+              <div className="col-6 col-sm-6 col-md-6 col-xl-4">
                 <div className="col dataTitle">
                   <i className="fa fa-line-chart mr-1" aria-hidden="true"></i>
                   Total cases
@@ -51,7 +51,7 @@ export default function MiniTile(props) {
                   {numberWithCommas(confirmed)}
                 </div>
               </div>
-              <div className="col-8 col-xs-6 col-sm-8 col-md-6 col-xl-4">
+              <div className="col-6 col-sm-6 col-md-6 col-xl-4">
                 <div className="col dataTitle">
                   <i className="fa fa-heart mr-1" aria-hidden="true"></i>
                   Recovered
@@ -60,7 +60,7 @@ export default function MiniTile(props) {
                   {numberWithCommas(recovered)}
                 </div>
               </div>
-              <div className="col-8 col-xs-6  col-sm-8  col-md-6  col-xl-4">
+              <div className="col-6 col-sm-12  col-md-12  col-xl-4">
                 <div className="col dataTitle">
                   <i className="fa fa-info-circle mr-1" aria-hidden="true"></i>
                   Deaths
