@@ -7,7 +7,7 @@ import { getDataForAllCountries } from "../data/fetchCountries";
 import Navbar from "./Navbar";
 import useSWR from "swr";
 import Alert from "./Alert";
-import ReactGa from "react-ga";
+import ReactGA from "react-ga";
 
 export default function Main() {
   const [messages, setMessages] = useState([]);
@@ -38,9 +38,10 @@ export default function Main() {
   };
 
   useEffect(() => {
+    ReactGA.initialize("UA-181831388-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
     setMounted(true);
-    ReactGa.initialize("G-PCGPX0FWZ9");
-    ReactGa.pageview("/");
+    // ReactGa.pageview("");
   }, [footerEndRef]);
 
   return (
@@ -49,12 +50,14 @@ export default function Main() {
       {/* <Search handleInputChange={handleInput} /> */}
       <Alert />
       {displayLoading && (
-        <div
-          className="container spinner-border"
-          style={{ width: "3rem", height: "3rem" }}
-          role="status"
-        >
-          <span className="sr-only">Loading...</span>
+        <div className="container" style={{ width: "3rem", height: "3rem" }}>
+          <div className="row d-flex justfiy-content-center">
+            <div className="col-8">
+              <div className="spinner-border" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
         </div>
       )}
       {errorMessage && (
