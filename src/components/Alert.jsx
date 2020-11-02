@@ -34,8 +34,8 @@ export default function Alert() {
             <ul className="list-inline">
               <li className="list-inline-item">Data available for:</li>
               <li className="list-inline-item">United States,</li>
-              <li className="list-inline-item">India, and</li>
-              <li className="list-inline-item">Brazil</li>
+              <li className="list-inline-item">India,</li>
+              <li className="list-inline-item">Brazil, and </li>
               <li className="list-inline-item">Russia</li>
             </ul>
           </div>
