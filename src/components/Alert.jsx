@@ -9,7 +9,7 @@ export default function Alert() {
             className="alert alert-success alert-dismissible fade show"
             role="alert"
           >
-            <strong>Hey there!</strong> We have added the top 3 countries with
+            <strong>Hey there!</strong> We have added the top 4 countries with
             the most Covid-19 cases. Be sure to check them out, if it is one of
             your next travelling destinations. I will appreciate if you can
             support this project by clicking on{" "}
@@ -36,6 +36,7 @@ export default function Alert() {
               <li className="list-inline-item">United States,</li>
               <li className="list-inline-item">India, and</li>
               <li className="list-inline-item">Brazil</li>
+              <li className="list-inline-item">Russia</li>
             </ul>
           </div>
         </div>
