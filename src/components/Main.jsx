@@ -49,7 +49,7 @@ export default function Main() {
     <div className="container-fluid">
       <Navbar scrollToFooter={handleScroll} />
       {/* <Search handleInputChange={handleInput} /> */}
-      <Alert />
+      <Alert countries={messages} />
       {displayLoading && (
         <div className="container" style={{ width: "3rem", height: "3rem" }}>
           <div className="row d-flex justfiy-content-center">

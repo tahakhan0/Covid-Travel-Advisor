@@ -8,7 +8,8 @@ export default function CookieAlert() {
           <div
             className="alert alert-dismissible fade show"
             role="alert"
-            style={{ backgroundColor: "#003542", color: "white" }}
+            style={{ backgroundColor: "black", color: "white" }}
+            // backgroundColor: "#003542"
           >
             This site uses cookies to enhance your experience.
             <button

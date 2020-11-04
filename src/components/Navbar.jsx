@@ -3,8 +3,8 @@ import React from "react";
 export default function Navbar({ scrollToFooter }) {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark"
-      style={{ backgroundColor: "#003542" }}
+      className="navbar navbar-expand-lg navbar-dark bg-primary"
+      // style={{ backgroundColor: "#003542" }}
     >
       <div className="container">
         <a className="navbar-brand" href="/">

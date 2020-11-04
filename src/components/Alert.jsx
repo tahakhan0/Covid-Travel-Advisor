@@ -1,44 +1,52 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-export default function Alert() {
+export default function Alert({ countries }) {
+  const [allCountries, setAllCountries] = useState([]);
+
+  function getAllCountries(countries) {
+    let names = [];
+    var i;
+    for (i = 0; i < countries.length; i++) {
+      names.push(countries[i].country.name);
+    }
+    return names;
+  }
+  useEffect(() => {
+    setAllCountries(getAllCountries(countries));
+  }, [countries]);
+
   return (
-    <div className="container" style={{ marginTop: "2rem" }}>
-      <div className="row justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8">
-          <div
-            className="alert alert-success alert-dismissible fade show"
-            role="alert"
-          >
-            <strong>Hey there!</strong> We have added the top 4 countries with
-            the most Covid-19 cases. Be sure to check them out, if it is one of
-            your next travelling destinations. I will appreciate if you can
-            support this project by clicking on{" "}
-            <strong>
-              <a
-                href="https://www.buymeacoffee.com/tahak"
-                className="text-dark"
-              >
-                Support this Project{" "}
-              </a>{" "}
-            </strong>
-            link.
-            <button
-              type="button"
-              className="close"
-              data-dismiss="alert"
-              aria-label="Close"
+    <div className="container-fluid">
+      <div
+        className="jumbotron jumbotron-fluid shadow-sm"
+        style={{ backgroundColor: "white" }}
+      >
+        <div className="container">
+          <h1 className="display-4">Hello, world!</h1>
+          <p className="lead">
+            We have added the top {allCountries.length} countries with the most
+            Covid-19 cases. Be sure to check them out, if it is one of your next
+            travelling destinations. I will appreciate if you can support this
+            project by clicking on the button below.
+          </p>
+          <p className="lead">
+            <a
+              className="btn btn-warning btn-md"
+              href="https://www.buymeacoffee.com/tahak"
+              role="button"
             >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <hr />
-            <ul className="list-inline">
-              <li className="list-inline-item">Data available for:</li>
-              <li className="list-inline-item">United States,</li>
-              <li className="list-inline-item">India,</li>
-              <li className="list-inline-item">Brazil, and </li>
-              <li className="list-inline-item">Russia</li>
-            </ul>
-          </div>
+              Support this project
+            </a>
+          </p>
+          <hr />
+          <ul className="list-inline">
+            <li className="list-inline-item">Data available for:</li>
+            {allCountries.map((country) => (
+              <li key={country} className="list-inline-item">
+                {country} |
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
