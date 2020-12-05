@@ -1,6 +1,7 @@
-## Covid Travel Advisor
+### Covid Travel Advisor
 
-Made using Reactjs and Bootstrap 4
+## Made using Reactjs and Bootstrap 4.
+
 
 ![Alt text](https://github.com/tahakhan0/Covid-Travel-Advisor/blob/main/covidtraveladvisor.gif "Optional title")
 
