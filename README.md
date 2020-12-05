@@ -2,6 +2,8 @@
 
 Made using Reactjs and Bootstrap 4
 
+![Alt text](https://github.com/tahakhan0/Covid-Travel-Advisor/blob/main/covidtraveladvisor.gif "Optional title")
+
 ## Available Scripts
 
 In the project directory, you can run:
