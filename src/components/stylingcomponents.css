@@ -113,3 +113,9 @@ input.form-control::placeholder {
   height: 4rem;
 } */
 /* Mini tile end */
+
+/* Stat SelectCountry Styling */
+.SelectCountryStyle {
+  font-size: 20px;
+}
+/* End SelectCountry Stylinh */

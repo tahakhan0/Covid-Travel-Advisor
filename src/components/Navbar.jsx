@@ -3,11 +3,11 @@ import React from "react";
 export default function Navbar({ scrollToFooter }) {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark bg-primary"
+      className="navbar navbar-expand-lg navbar-dark bg-dark"
       // style={{ backgroundColor: "#003542" }}
     >
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" role="button">
           Covid Travel Assistant
         </a>
         <button
@@ -25,12 +25,12 @@ export default function Navbar({ scrollToFooter }) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-sm-2 ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="/" onClick={scrollToFooter}>
+              <a className="nav-link" onClick={scrollToFooter} role="button">
                 About this project
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="/" onClick={scrollToFooter}>
+              <a className="nav-link" onClick={scrollToFooter} role="button">
                 Our Data
               </a>
             </li>
